@@ -1,0 +1,15 @@
+﻿Goals and tips for website portfolio
+
+• Configure page so that the user knows which page they are on; show all page links in Nav
+
+• Explore different layouts and design elements to incoporate
+
+• vertical social media links on media page and maybe on all pages if main body content is reduced width and centered
+
+• Update Logo/Name; make higher quality
+
+• Welcome or about me text
+
+• Put down until Graduatuion on Home Page
+
+• Make the Dreamweaver page responsive

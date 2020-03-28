@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:BEYNO;
+	src:url('BEYNO.otf') format('opentype'),
+		url('BEYNO.ttf') format('truetype');
+}
+
+html {
+	width: 100%;
+}
+
+
+body{
+	background:rgba(50,53,60,1.00);
+	background: url(images/black-panther.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+
+/* Header/Navigation 
+
+display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	
+	^TO CENTER CONTENTS^
+
+**Change Header to div**
+*/
+
+div.header {
+	display: flex;
+	
+	background-color: rgba(79, 61, 134, 0.85);
+	justify-content: space-between;
+	flex-direction: row;
+	height:7vh;
+	min-height: 60px;
+	padding-right: 1.5vw;
+	padding-left: 1.5vw;
+}
+
+
+ul {
+	display: flex;
+	color: white;
+	font-size: 1.8em;
+	margin-top: 21px;
+}
+
+.Title{
+	display: flex;
+	margin: auto 0%;
+}
+
+/*h1 {
+	color: white;
+	width: 50%;
+	font-size: 2.7em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left:15px;
+	font-family: BEYNO, 'Calistoga', cursive;
+	text-shadow: 5px 6px black;
+	letter-spacing: 3px;
+	
+	}   */
+
+li {
+	font-family: 'Calistoga', cursive;
+	margin: auto 0px auto 1.5vw;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	color: white; /* rgb(151, 151, 151); */
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: ivory; /*rgb(79, 61, 134) */
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 5px 6px black;
+	/*border: 2px solid white; */
+}
+
+/* Welcome Text Style
+
+section#welcome {
+	display: flex;
+	color: white;
+	align-content: center;
+	font-size: 5em;
+	
+}
+
+section#welcome > a:link, section#welcome > a:visited {
+	display: none;
+	
+}
+
+section#welcome > a:hover, section#welcome > a:active {
+	display: flex;
+	
+}
+*/
+
+/* Social Media*/
+
+.social{display:flex; flex-direction:column; flex-wrap:wrap; width:10%;}
+
+img#fb{
+	position:fixed;
+	bottom: 5.5%;
+	/*right:18vw;*/
+}
+img#tw{
+	position:fixed;
+	bottom: 5.5%;
+	/*right:12vw;*/
+}
+img#ig{
+	position:fixed;
+	bottom: 5.5%;
+	/*right:6vw;*/
+}
+img#li{
+	position:fixed;
+	bottom: 5.5%;
+	/*right:0vw;*/
+}
+
+img#fb, img#tw, img#ig, img#li {margin: auto 2% auto 2%;float:left;}
+
+/*HTML Page*/
+section.html, section.dw{
+	display: grid;
+	grid-template-columns: auto auto;
+	text-align: center;
+	/*overflow: scroll;
+	overflow-x:hidden;
+	overflow-y:auto;*/
+}
+
+section.dw{margin-bottom: 5vh;}
+
+section.javascript{
+	display:grid;
+	grid-template-columns: auto;
+	text-align:center;
+/*	margin-bottom: 4vh;*/
+}
+
+
+
+img.chap, .dwsite{
+	border-top:10px inset white;
+	border-right:10px inset white;
+	border-bottom:10px inset rgba(79, 61, 134, 1);
+	border-left:10px inset rgba(79, 61, 134, 1);
+	height:300px;
+	width:300px;
+		
+}
+
+p.pi{
+	/*width:175px;
+	margin: 10px auto 5px auto;
+	font-weight: bold;
+	font-size:1.2em;
+	background:rgba(79, 61, 134, 0.75);
+	text-decoration: none;
+	/*margin:  auto 0 auto 15%; NOT INCLUDED
+	color:white; */
+	color: white;
+	background-color: rgba(79, 61, 134, 0.9);
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 2px solid white;
+	margin: 15px auto 10px auto;
+	line-height: 1.2;
+	width: 20vmax;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+
+/* div.square1, div.square3, div.square2, div.square4{
+	margin: 30px auto;
+	
+} */
+
+/* PHOTOSHOP Page*/
+section.projects {
+	text-align:center;
+	margin:auto;
+	width: 80vw;
+	margin-top:2vh;
+}
+
+section.projects p {
+	color: white;
+	background-color: rgba(79, 61, 134, 0.95);
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 2px solid white;
+	margin:15px auto;
+	line-height: 1.2;
+	width: 10vmax;
+}
+/*Project Pictures*/
+.p1b, .p1a{height: 331px;}
+.p2b, .p2a{width: 40%;}
+.p3b, .p3a {width: 60%;}
+.p4 img{
+	text-align:center;
+	width: 70%;
+	margin: auto 20px;}
+	
+	hr {
+		width: 65vw;
+	}
+.title {
+	color: rgba(255,255,255,1.00);
+	font-family: 'Calistoga', cursive;
+	text-align: center;
+	font-size: x-large;
+	margin-top: 1%;
+	margin-bottom: 0%;
+	text-shadow: 3px 4px 3px #000000;
+	font-weight: 400;
+	background-color: rgba(255,252,0,0.87);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+.quote {
+	margin-right: auto;
+	margin-left: auto;
+	color: #FFFFFF;
+	background-image: -webkit-linear-gradient(270deg,rgba(69,53,116,0.90) 15.55%,rgba(255,255,255,0.75) 100%);
+	font-family: 'Calistoga', cursive;
+	width: 60vw;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-image: -moz-linear-gradient(270deg,rgba(69,53,116,0.90) 15.55%,rgba(255,255,255,0.75) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(69,53,116,0.90) 15.55%,rgba(255,255,255,0.75) 100%);
+	background-image: linear-gradient(180deg,rgba(69,53,116,0.90) 15.55%,rgba(255,255,255,0.75) 100%);
+	text-shadow: 3px 4px 4px rgba(0,0,0,1.00);
+	font-weight: 500;
+	font-variant: small-caps;
+	font-style: italic;
+	font-size: 2em;
+	margin-top: 36.5vh;
+	text-align: center;
+}
+
+
+
+/*.p1, .p2, .p3, .p4{margin-bottom:15px;} */
+
+/*div.p1, div.p3{
+	border-right: 5px solid #FFFFFF;}
+
+div.p3, div.p4{border-top: 5px solid #FFFFFF;}
+
+div.p4 img{ margin:20% auto;}
+	-webkit-animation:colorchange 5s infinite alternate;
+      max-width:75px;
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {color: white;
+	  }
+      50% {color: #34495e;
+      }
+      100% {
+        color: blue;
+      }*/
+
+/*MOBILE RESPONSIVE */
+@media screen and (max-width: 600px) {
+	body { max-width: 100vw;
+	width:100%;}
+	.Title{display:none;}
+	header {
+		display: flex;
+		flex-direction: column;
+		max-width: 100vw;
+		width:100%;
+		
+	}
+	nav{margin:0.3vh auto;}
+	ul {
+	display: flex;
+	color: white;
+	font-size: 1.6em;
+	}
+	
+	li {margin: auto 0px auto 4vw;}
+
+	
+	section.projects p{	width: 100px;}
+	
+	/*Photos*/
+	.p1b, .p1a, .p4 img, .p2b, .p2a, .p3b, .p3a{height: 90%; width:90%;}
+	
+	img {max-width: 90vw;	}
+	
+	section.html{
+	display:flex;
+	flex-direction: column;}
+}
+
+
+
+/* Footer Styles*/
+div.footer {
+	bottom: 0;
+	width: 100%;
+	height: 5vh;
+	min-height: 20px;
+	background-color: rgba(79, 61, 134, 0.85);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+p#foottext {
+	color: white;
+	font-family: 'Calistoga', cursive;
+	font-size: 1em;
+}
