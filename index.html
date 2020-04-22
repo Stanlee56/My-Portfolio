@@ -10,6 +10,16 @@
 	<link href="styles.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164005090-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-164005090-1');
+	</script>
+
 	<style>
 	div.footer {
 	position:fixed;
@@ -48,7 +58,7 @@ document.onclick=reEnable
 <body>
 	<div class="header">
 		<!--<h1>STANLEY LAGUERRE</h1> -->
-		<img class="Title" src="images/SL Title.png"  alt="STANLEY LAGUERRE" />
+		<img class="logo" src="images/SL Title.png"  alt="STANLEY LAGUERRE" />
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -72,10 +82,10 @@ document.onclick=reEnable
 	<div class="quote"> Mastering Web Development one mistake at a time </div>
 	
 	<div class="social">
-	<img src="images/facebook.png" id="fb" alt="Facebook Icon" style="width:50px;height:50px;">
-	<img src="images/twitter.png" id="tw" alt="Twitter Icon" style="width:50px;height:50px;">
-	<img src="images/instagram.png" id="ig" alt="Instagram Icon" style="width:50px;height:50px;">
-	<img src="images/linkedin.png" id="li" alt="Linkedin Icon" style="width:52px;height:50px;">
+	<img src="images/facebook.png" class="fb" alt="Facebook Icon" style="width:50px;height:50px;">
+	<img src="images/twitter.png" class="tw" alt="Twitter Icon" style="width:50px;height:50px;">
+	<img src="images/instagram.png" class="ig" alt="Instagram Icon" style="width:50px;height:50px;">
+	<img src="images/linkedin.png" class="li" alt="Linkedin Icon" style="width:52px;height:50px;">
 	</div>
 	
 	<div class="footer">
